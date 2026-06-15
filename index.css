@@ -46,10 +46,12 @@ nav a:hover{
     align-items:center;
     text-align:center;
     background:#f5f5f5;
+    border:3px solid red;
 }
 
 .hero h1{
     font-size:48px;
+    color:red;
 }
 
 .container{
