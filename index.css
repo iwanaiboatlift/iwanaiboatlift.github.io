@@ -51,7 +51,7 @@ nav a:hover{
 
 .hero h1{
     font-size:48px;
-    color:#222;
+    color:#222!important;
 }
 
 .container{
