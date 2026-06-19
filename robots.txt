@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://iwanaiboatlift.github.io/sitemap.xml
