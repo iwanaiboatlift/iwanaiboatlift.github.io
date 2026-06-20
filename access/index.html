@@ -19,6 +19,48 @@ gtag('config', 'G-5GLSDNZQG4');
 
 <link rel="stylesheet" href="../index.css">
 
+<style>
+
+.access-grid{
+    display:grid;
+    grid-template-columns:1fr 1.5fr;
+    gap:40px;
+    align-items:start;
+}
+
+.access-info{
+    background:#f8f9fa;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.access-map iframe{
+    width:100%;
+    height:550px;
+    border:3px solid #003366;
+    border-radius:10px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+.access-info h2{
+    margin-top:0;
+}
+
+@media(max-width:900px){
+
+    .access-grid{
+        grid-template-columns:1fr;
+    }
+
+    .access-map iframe{
+        height:400px;
+    }
+
+}
+
+</style>
+
 </head>
 
 <body>
@@ -26,7 +68,7 @@ gtag('config', 'G-5GLSDNZQG4');
 <header>
 
 <div class="logo">
-<img src="../img/logo.png" alt="">
+<img src="../img/logo.png" alt="岩内地方船舶上架公社">
 </div>
 
 <nav>
@@ -56,6 +98,10 @@ gtag('config', 'G-5GLSDNZQG4');
 
 <section class="container">
 
+<div class="access-grid">
+
+<div class="access-info">
+
 <h2>所在地</h2>
 
 <p>
@@ -66,18 +112,6 @@ gtag('config', 'G-5GLSDNZQG4');
 <p>
 岩内港内に位置するリフト式船舶上架施設です。
 </p>
-
-<h2>アクセスマップ</h2>
-
-<iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4524.469454825442!2d140.51618199197677!3d42.98790776748522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0a97005ca26c91%3A0x3e9739fd66eb6308!2z5bKp5YaF5Zyw5pa56Ii56Ii25LiK5p625YWs56S-!5e0!3m2!1sja!2sjp!4v1781916678258!5m2!1sja!2sjp"
-width="100%"
-height="500"
-style="border:0; border-radius:10px;"
-allowfullscreen=""
-loading="lazy"
-referrerpolicy="no-referrer-when-downgrade">
-</iframe>
 
 <p>
 <a href="https://maps.app.goo.gl/7RwLgVhWPzYRRFns5" target="_blank">
@@ -92,8 +126,6 @@ Googleマップで開く
 小樽市内から約1時間30分
 </p>
 
-
-
 <h2>施設について</h2>
 
 <p>
@@ -101,8 +133,24 @@ Googleマップで開く
 </p>
 
 <p>
-プレジャーボートのご利用は年間契約制となっております。詳細は利用案内・料金表をご確認ください。
+プレジャーボートのご利用は年間契約制となっております。
+詳細は利用案内・料金表をご確認ください。
 </p>
+
+</div>
+
+<div class="access-map">
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4524.469454825442!2d140.51618199197677!3d42.98790776748522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0a97005ca26c91%3A0x3e9739fd66eb6308!2z5bKp5YaF5Zyw5pa56Ii56Ii25LiK5p625YWs56S-!5e0!3m2!1sja!2sjp!4v1781916678258!5m2!1sja!2sjp"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+
+</div>
 
 </section>
 
