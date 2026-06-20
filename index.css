@@ -66,3 +66,31 @@ footer{
     text-align:center;
     padding:30px;
 }
+
+.access-grid{
+    display:grid;
+    grid-template-columns:1fr 1.5fr;
+    gap:40px;
+    align-items:start;
+}
+
+.access-info{
+    background:#f8f9fa;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.access-map iframe{
+    border-radius:10px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.2);
+    border:3px solid #003366;
+}
+
+@media(max-width:900px){
+
+    .access-grid{
+        grid-template-columns:1fr;
+    }
+
+}
