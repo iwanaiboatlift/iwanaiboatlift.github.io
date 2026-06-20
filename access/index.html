@@ -8,7 +8,6 @@
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-
 gtag('config', 'G-5GLSDNZQG4');
 </script>
 
@@ -23,38 +22,80 @@ gtag('config', 'G-5GLSDNZQG4');
 
 .access-grid{
     display:grid;
-    grid-template-columns:1fr 1.5fr;
-    gap:40px;
+    grid-template-columns:1fr 2fr;
+    gap:60px;
     align-items:start;
 }
 
 .access-info{
     background:#f8f9fa;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+.section-title{
+    font-size:13px;
+    letter-spacing:3px;
+    color:#666;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.access-info h2{
+    margin-top:50px;
+    margin-bottom:20px;
+    font-size:30px;
+    color:#003366;
+    border-bottom:2px solid #003366;
+    padding-bottom:10px;
+}
+
+.access-info h2:first-of-type{
+    margin-top:0;
+}
+
+.access-info p{
+    font-size:18px;
+    line-height:2;
+    margin-bottom:20px;
+}
+
+.access-info a{
+    font-size:18px;
+    font-weight:700;
+    color:#003366;
 }
 
 .access-map iframe{
     width:100%;
-    height:550px;
+    height:700px;
     border:3px solid #003366;
-    border-radius:10px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.2);
-}
-
-.access-info h2{
-    margin-top:0;
+    border-radius:12px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.2);
 }
 
 @media(max-width:900px){
 
     .access-grid{
         grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .access-info{
+        padding:25px;
+    }
+
+    .access-info h2{
+        font-size:24px;
+    }
+
+    .access-info p{
+        font-size:16px;
     }
 
     .access-map iframe{
-        height:400px;
+        height:450px;
     }
 
 }
@@ -68,7 +109,7 @@ gtag('config', 'G-5GLSDNZQG4');
 <header>
 
 <div class="logo">
-<img src="../img/logo.png" alt="岩内地方船舶上架公社">
+<img src="../img/logo.png" alt="">
 </div>
 
 <nav>
@@ -102,6 +143,7 @@ gtag('config', 'G-5GLSDNZQG4');
 
 <div class="access-info">
 
+<div class="section-title">LOCATION</div>
 <h2>所在地</h2>
 
 <p>
@@ -119,6 +161,7 @@ Googleマップで開く
 </a>
 </p>
 
+<div class="section-title">ACCESS BY CAR</div>
 <h2>お車でお越しの方</h2>
 
 <p>
@@ -126,6 +169,11 @@ Googleマップで開く
 小樽市内から約1時間30分
 </p>
 
+<p>
+岩内港周辺までお越しいただき、案内表示に従ってお進みください。
+</p>
+
+<div class="section-title">FACILITY</div>
 <h2>施設について</h2>
 
 <p>
@@ -133,8 +181,7 @@ Googleマップで開く
 </p>
 
 <p>
-プレジャーボートのご利用は年間契約制となっております。
-詳細は利用案内・料金表をご確認ください。
+プレジャーボートのご利用は年間契約制となっております。詳細は利用案内・料金表をご確認ください。
 </p>
 
 </div>
