@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
@@ -6,39 +7,39 @@
 </url>
 
 <url>
-<loc>https://iwanaiboatlift.github.io/guide</loc>
+<loc>https://iwanaiboatlift.github.io/guide/</loc>
 </url>
 
 <url>
-<loc>https://iwanaiboatlift.github.io/fee</loc>
+<loc>https://iwanaiboatlift.github.io/fee/</loc>
 </url>
 
 <url>
-<loc>https://iwanaiboatlift.github.io/access</loc>
+<loc>https://iwanaiboatlift.github.io/access/</loc>
 </url>
 
 <url>
-<loc>https://iwanaiboatlift.github.io/contact</loc>
+<loc>https://iwanaiboatlift.github.io/contact/</loc>
 </url>
 
 <url>
 <loc>https://iwanaiboatlift.github.io/en/</loc>
 </url>
-  
+
 <url>
-<loc>https://iwanaiboatlift.github.io/en/guide</loc>
+<loc>https://iwanaiboatlift.github.io/en/guide/</loc>
 </url>
 
 <url>
-<loc>https://iwanaiboatlift.github.io/en/fee</loc>
+<loc>https://iwanaiboatlift.github.io/en/fee/</loc>
 </url>
 
 <url>
-<loc>https://iwanaiboatlift.github.io/en/access</loc>
+<loc>https://iwanaiboatlift.github.io/en/access/</loc>
 </url>
-  
+
 <url>
-<loc>https://iwanaiboatlift.github.io/en/contact</loc>
+<loc>https://iwanaiboatlift.github.io/en/contact/</loc>
 </url>
 
 </urlset>
