@@ -1,41 +1,166 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5GLSDNZQG4"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5GLSDNZQG4');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-5GLSDNZQG4');
 </script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>利用案内｜岩内地方船舶上架公社</title>
+
 <link rel="stylesheet" href="../index.css">
+
+<style>
+
+.guide-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:40px;
+}
+
+.guide-card{
+    background:#f8f9fa;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+.section-title{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#666;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.guide-card h2{
+    color:#003366;
+    font-size:28px;
+    border-bottom:2px solid #003366;
+    padding-bottom:10px;
+    margin-top:0;
+    margin-bottom:25px;
+}
+
+.guide-card p,
+.guide-card li{
+    font-size:17px;
+    line-height:2;
+}
+
+.guide-card ul{
+    padding-left:20px;
+}
+
+@media(max-width:900px){
+
+    .guide-grid{
+        grid-template-columns:1fr;
+    }
+
+    .guide-card{
+        padding:25px;
+    }
+
+}
+
+</style>
+
 </head>
+
 <body>
+
 <header>
 
 <div class="logo">
-  <img src="img/logo.png" alt="">
+<img src="../img/logo.png" alt="">
 </div>
+
 <nav>
 <a href="/">ホーム</a>
 <a href="/guide/">利用案内</a>
-<a href="/fee/">料金表</a>  
+<a href="/fee/">料金表</a>
 <a href="/access/">アクセス</a>
 <a href="/contact/">お問い合わせ</a>
 <a href="/en/">English</a>
 </nav>
 
 </header>
+
 <section class="hero">
+
 <div class="hero-overlay">
-<h1>guide</h1>
-<p>ここに内容を入力してください。</p>
+
+<h1>利用案内</h1>
+
+<p>
+岩内地方船舶上架公社の利用方法についてご案内します。
+</p>
+
 </div>
+
 </section>
+
+<section class="container">
+
+<div class="guide-grid">
+
+<div class="guide-card">
+
+<div class="section-title">COMMERCIAL VESSELS</div>
+
+<h2>船舶・漁船をご利用の方</h2>
+
+<p>
+ここに内容を入力してください。
+</p>
+
+<ul>
+<li>利用対象：</li>
+<li>利用方法：</li>
+<li>作業内容：</li>
+<li>注意事項：</li>
+</ul>
+
+</div>
+
+<div class="guide-card">
+
+<div class="section-title">PLEASURE BOATS</div>
+
+<h2>プレジャーボートをご利用の方</h2>
+
+<p>
+ここに内容を入力してください。
+</p>
+
+<ul>
+<li>利用対象：</li>
+<li>契約方法：</li>
+<li>利用方法：</li>
+<li>注意事項：</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© Iwanai Boat Lift Corporation
+
+</footer>
+
 </body>
 </html>
