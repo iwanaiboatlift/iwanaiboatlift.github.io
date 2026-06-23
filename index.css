@@ -46,7 +46,7 @@ nav a:hover{
         rgba(0,0,0,0.35),
         rgba(0,0,0,0.35)
     ),
-    url("DSC_9411／Ｈ２９より.JPG");
+    url("img/iwanai-port.jpg");
 
     background-size:cover;
     background-position:center;
@@ -60,9 +60,13 @@ nav a:hover{
 
 .hero h1{
     font-size:48px;
-    color:#222!important;
+    color:white;
 }
 
+.hero p{
+    font-size:22px;
+    color:white;
+}
 .container{
     max-width:1400px;
     margin:80px auto;
