@@ -4,7 +4,7 @@
 
 body{
     margin:0;
-    padding-top:80px;
+    padding-top:0;
     font-family:'Noto Serif JP',serif;
     color:#333;
     line-height:1.8;
@@ -15,7 +15,7 @@ header{
     top:0;
     left:0;
     width:100%;
-    background:rgba(0,45,90,0.94);
+    background:rgba(0,45,90,0.88);
     z-index:1000;
     box-shadow:0 2px 12px rgba(0,0,0,0.25);
 }
@@ -41,38 +41,39 @@ nav a:hover{
 }
 
 .hero{
-    height:100vh;
+    min-height:100vh;
     background:
     linear-gradient(
-        rgba(0,25,50,0.28),
-        rgba(0,25,50,0.28)
+        rgba(0,25,50,0.38),
+        rgba(0,25,50,0.38)
     ),
     url("Img/iwanai-port.JPG");
 
     background-size:cover;
-    background-position:center;
+    background-position:center center;
     background-repeat:no-repeat;
 
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
+    padding:120px 20px 80px;
 }
 
 .hero-overlay{
-    background:rgba(0,35,70,0.45);
-    padding:45px 70px;
-    border:1px solid rgba(255,255,255,0.35);
-    border-radius:6px;
-    backdrop-filter:blur(2px);
+    background:rgba(0,35,70,0.62);
+    padding:46px 80px;
+    border:1px solid rgba(255,255,255,0.28);
+    border-radius:8px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.28);
 }
 
 .hero h1{
     font-size:52px;
     color:white !important;
-    margin:0 0 20px;
+    margin:0 0 18px;
     letter-spacing:0.08em;
-    text-shadow:0 4px 12px rgba(0,0,0,0.6);
+    text-shadow:0 4px 12px rgba(0,0,0,0.55);
 }
 
 .hero p{
@@ -80,7 +81,7 @@ nav a:hover{
     color:white;
     margin:0;
     letter-spacing:0.08em;
-    text-shadow:0 3px 10px rgba(0,0,0,0.6);
+    text-shadow:0 3px 10px rgba(0,0,0,0.55);
 }
 
 .container{
@@ -185,10 +186,6 @@ footer{
 
 @media(max-width:900px){
 
-    body{
-        padding-top:90px;
-    }
-
     nav{
         gap:14px;
         padding:16px 10px;
@@ -199,9 +196,15 @@ footer{
         font-size:13px;
     }
 
+    .hero{
+        padding:120px 18px 70px;
+        background-position:center center;
+    }
+
     .hero-overlay{
-        padding:30px 22px;
-        margin:0 18px;
+        padding:32px 24px;
+        width:100%;
+        max-width:520px;
     }
 
     .hero h1{
