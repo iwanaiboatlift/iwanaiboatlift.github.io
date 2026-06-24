@@ -19,15 +19,31 @@ gtag('config', 'G-5GLSDNZQG4');
 <link rel="stylesheet" href="../index.css">
 
 <style>
-
-.guide-grid{
+.guide-grid,
+.flow-grid,
+.equipment-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
     gap:40px;
     margin-top:40px;
 }
 
-.guide-card{
+.guide-grid{
+    grid-template-columns:1fr 1fr;
+}
+
+.flow-grid{
+    grid-template-columns:repeat(4, 1fr);
+}
+
+.equipment-grid{
+    grid-template-columns:repeat(2, 1fr);
+}
+
+.guide-card,
+.info-card,
+.flow-item,
+.equipment-item,
+.faq-item{
     background:#f8f9fa;
     padding:40px;
     border-radius:12px;
@@ -42,7 +58,8 @@ gtag('config', 'G-5GLSDNZQG4');
     margin-bottom:5px;
 }
 
-.guide-card h2{
+.guide-card h2,
+.info-card h2{
     color:#003366;
     font-size:28px;
     border-bottom:2px solid #003366;
@@ -51,28 +68,45 @@ gtag('config', 'G-5GLSDNZQG4');
     margin-bottom:25px;
 }
 
-.guide-card p,
-.guide-card li{
+h3{
+    color:#003366;
+}
+
+p,
+li{
     font-size:17px;
     line-height:2;
 }
 
-.guide-card ul{
+ul{
     padding-left:20px;
 }
 
-@media(max-width:900px){
+.info-section{
+    margin-top:70px;
+}
 
-    .guide-grid{
+.flow-number{
+    color:#003366;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+@media(max-width:900px){
+    .guide-grid,
+    .flow-grid,
+    .equipment-grid{
         grid-template-columns:1fr;
     }
 
-    .guide-card{
+    .guide-card,
+    .info-card,
+    .flow-item,
+    .equipment-item,
+    .faq-item{
         padding:25px;
     }
-
 }
-
 </style>
 
 </head>
@@ -97,17 +131,10 @@ gtag('config', 'G-5GLSDNZQG4');
 </header>
 
 <section class="hero">
-
 <div class="hero-overlay">
-
 <h1>利用案内</h1>
-
-<p>
-岩内地方船舶上架公社の利用方法についてご案内します。
-</p>
-
+<p>岩内地方船舶上架公社の利用方法についてご案内します。</p>
 </div>
-
 </section>
 
 <section class="container">
@@ -115,36 +142,112 @@ gtag('config', 'G-5GLSDNZQG4');
 <div class="guide-grid">
 
 <div class="guide-card">
-
 <div class="section-title">COMMERCIAL VESSELS</div>
-
 <h2>船舶・漁船をご利用の方</h2>
-
-<p>
-</p>
-
 <ul>
-<li>利用対象：</li>
 <li>利用方法：電話予約（お問い合わせからご確認ください）</li>
 <li>作業内容：船舶の上架・下架作業</li>
+<li>その他：保管期間や料金については料金表をご確認ください</li>
 </ul>
-
 </div>
 
 <div class="guide-card">
-
 <div class="section-title">PLEASURE BOATS</div>
-
 <h2>プレジャーボートをご利用の方</h2>
-
-<p>
-</p>
-
 <ul>
 <li>契約方法：年間契約</li>
 <li>利用方法：日帰り利用・陸上保管</li>
+<li>上架・下架：利用者ご自身で実施</li>
+<li>設備：水道設備をご利用いただけます</li>
 </ul>
+</div>
 
+</div>
+
+<div class="info-section info-card">
+<div class="section-title">FLOW</div>
+<h2>利用の流れ</h2>
+
+<div class="flow-grid">
+
+<div class="flow-item">
+<div class="flow-number">STEP 01</div>
+<h3>お問い合わせ</h3>
+<p>利用希望日、船舶の内容、利用目的についてお問い合わせください。</p>
+</div>
+
+<div class="flow-item">
+<div class="flow-number">STEP 02</div>
+<h3>日程調整</h3>
+<p>作業日程、利用内容、料金等について確認します。</p>
+</div>
+
+<div class="flow-item">
+<div class="flow-number">STEP 03</div>
+<h3>施設利用</h3>
+<p>当日は安全に配慮しながら、上架・下架または保管利用を行います。</p>
+</div>
+
+<div class="flow-item">
+<div class="flow-number">STEP 04</div>
+<h3>作業・保管</h3>
+<p>必要に応じて船体洗浄、点検、整備、保管等にご利用いただけます。</p>
+</div>
+
+</div>
+</div>
+
+<div class="info-section info-card">
+<div class="section-title">EQUIPMENT</div>
+<h2>利用可能設備</h2>
+
+<div class="equipment-grid">
+
+<div class="equipment-item">
+<h3>リフト式上架設備</h3>
+<p>船舶の上架・下架に使用する設備です。</p>
+</div>
+
+<div class="equipment-item">
+<h3>高圧洗浄機</h3>
+<p>※ホースの距離の関係上、船舶のみ船体洗浄等にご利用いただけます。</p>
+</div>
+
+<div class="equipment-item">
+<h3>水道設備</h3>
+<p>船体洗浄やメンテナンス作業時にご利用いただけます。</p>
+</div>
+
+<div class="equipment-item">
+<h3>作業スペース</h3>
+<p>点検・整備・保管等の作業場所としてご利用いただけます。</p>
+</div>
+
+</div>
+</div>
+
+<div class="info-section info-card">
+<div class="section-title">FAQ</div>
+<h2>よくある質問</h2>
+
+<div class="faq-item">
+<h3>Q. 予約は必要ですか？</h3>
+<p>A. 船舶・漁船、プレジャーボートともに、事前にお問い合わせください。</p>
+</div>
+
+<div class="faq-item">
+<h3>Q. プレジャーボートの上架・下架は依頼できますか？</h3>
+<p>A. プレジャーボートの上架・下架作業は利用者ご自身で行っていただきます。</p>
+</div>
+
+<div class="faq-item">
+<h3>Q. 水道は利用できますか？</h3>
+<p>A. 船体洗浄やメンテナンス作業等にご利用いただけます。</p>
+</div>
+
+<div class="faq-item">
+<h3>Q. 高圧洗浄機は利用できますか？</h3>
+<p>A. ホースの距離の関係上、船舶のみ船体洗浄等にご利用いただけます。</p>
 </div>
 
 </div>
@@ -152,9 +255,7 @@ gtag('config', 'G-5GLSDNZQG4');
 </section>
 
 <footer>
-
 © Iwanai Boat Lift Corporation
-
 </footer>
 
 </body>
