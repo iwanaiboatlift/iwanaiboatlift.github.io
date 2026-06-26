@@ -19,18 +19,16 @@ gtag('config', 'G-6HY648SB9S');
 <link rel="stylesheet" href="../index.css">
 
 <style>
-.fee-grid{
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:40px;
-    margin-top:50px;
+.fee-section{
+    margin-top:60px;
 }
 
 .fee-card{
     background:#f8f9fa;
-    padding:40px;
-    border-radius:12px;
+    padding:45px;
+    border-radius:14px;
     box-shadow:0 6px 18px rgba(0,0,0,0.1);
+    margin-bottom:50px;
 }
 
 .section-title{
@@ -43,7 +41,7 @@ gtag('config', 'G-6HY648SB9S');
 
 .fee-card h2{
     color:#003366;
-    font-size:28px;
+    font-size:30px;
     border-bottom:2px solid #003366;
     padding-bottom:10px;
     margin-top:0;
@@ -52,21 +50,28 @@ gtag('config', 'G-6HY648SB9S');
 
 .fee-card h3{
     color:#003366;
-    margin-top:30px;
-    margin-bottom:10px;
+    font-size:22px;
+    margin-top:35px;
+    margin-bottom:12px;
 }
 
-.fee-card p{
+.fee-card p,
+.fee-card li{
     font-size:17px;
     line-height:2;
+}
+
+.table-wrap{
+    overflow-x:auto;
 }
 
 .fee-table{
     width:100%;
     border-collapse:collapse;
     margin-top:15px;
-    margin-bottom:25px;
+    margin-bottom:30px;
     background:white;
+    min-width:650px;
 }
 
 .fee-table th,
@@ -82,35 +87,55 @@ gtag('config', 'G-6HY648SB9S');
     color:white;
 }
 
+.fee-table tr:nth-child(even) td{
+    background:#f3f6f9;
+}
+
 .note-box{
     margin-top:25px;
     margin-bottom:30px;
-    padding:20px;
+    padding:25px;
     background:#f0f6ff;
-    border-left:4px solid #003366;
-    border-radius:6px;
+    border-left:5px solid #003366;
+    border-radius:8px;
 }
 
 .note-box h3{
     margin-top:0;
-    color:#003366;
 }
 
-.note{
-    margin-top:40px;
-    padding:25px;
-    background:#f8f9fa;
+.period-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:25px;
+}
+
+.period-item{
+    background:white;
+    padding:20px;
+    border-radius:8px;
     border-left:5px solid #003366;
-    border-radius:6px;
+}
+
+.pb-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
 }
 
 @media(max-width:900px){
-    .fee-grid{
+    .fee-card{
+        padding:25px;
+    }
+
+    .period-box,
+    .pb-grid{
         grid-template-columns:1fr;
     }
 
-    .fee-card{
-        padding:25px;
+    .fee-card h2{
+        font-size:26px;
     }
 }
 </style>
@@ -122,7 +147,7 @@ gtag('config', 'G-6HY648SB9S');
 <header>
 
 <div class="logo">
-<img src="../Img/Hplogo.png" alt="岩内地方船舶上架公社">
+<img src="../Img/Hplogo.png" alt="">
 </div>
 
 <nav>
@@ -145,93 +170,148 @@ gtag('config', 'G-6HY648SB9S');
 
 <section class="container">
 
-<div class="fee-grid">
+<div class="fee-section">
 
 <div class="fee-card">
 
 <div class="section-title">COMMERCIAL VESSELS</div>
-<h2>船舶・漁船をご利用の方</h2>
+<h2>漁船・船舶をご利用の方</h2>
 
 <p>
-船舶の上架・保管料金です。船舶の総トン数および保管期間に応じて料金が異なります。
+船舶の上架料金・滞船料金です。料金は船舶の屯数、利用時期、作業時間により異なります。
 </p>
+
+<div class="period-box">
+<div class="period-item">
+<strong>夏期</strong><br>
+4月1日〜11月30日
+</div>
+
+<div class="period-item">
+<strong>冬期</strong><br>
+12月1日〜3月31日
+</div>
+</div>
+
+<h3>夏期リフト上架料金</h3>
+
+<div class="table-wrap">
+<table class="fee-table">
+<tr>
+<th>屯数</th>
+<th>2時間以内</th>
+<th>2時間以降 1時間毎</th>
+</tr>
+<tr>
+<td>5t未満</td>
+<td>14,300円</td>
+<td>1,100円</td>
+</tr>
+<tr>
+<td>10t未満</td>
+<td>14,300円</td>
+<td>1,100円</td>
+</tr>
+<tr>
+<td>15t未満</td>
+<td>18,150円</td>
+<td>1,375円</td>
+</tr>
+<tr>
+<td>20t未満（割増料金）</td>
+<td>22,000円</td>
+<td>1,375円</td>
+</tr>
+</table>
+</div>
+
+<h3>冬期リフト上架料金</h3>
+
+<div class="table-wrap">
+<table class="fee-table">
+<tr>
+<th>屯数</th>
+<th>2時間以内</th>
+<th>2時間以降 1時間毎</th>
+</tr>
+<tr>
+<td>5t未満</td>
+<td>17,600円</td>
+<td>1,100円</td>
+</tr>
+<tr>
+<td>10t未満</td>
+<td>17,600円</td>
+<td>1,100円</td>
+</tr>
+<tr>
+<td>15t未満</td>
+<td>21,450円</td>
+<td>1,375円</td>
+</tr>
+<tr>
+<td>20t未満（割増料金）</td>
+<td>21,450円</td>
+<td>1,375円</td>
+</tr>
+</table>
+</div>
+
+<h3>上架料金・滞船料金</h3>
+
+<div class="table-wrap">
+<table class="fee-table">
+<tr>
+<th>屯数</th>
+<th>夏期料金</th>
+<th>冬期料金</th>
+<th>滞船料（1日分）</th>
+</tr>
+<tr>
+<td>5t未満</td>
+<td>47,300円</td>
+<td>55,000円</td>
+<td>264円</td>
+</tr>
+<tr>
+<td>10t未満</td>
+<td>93,500円</td>
+<td>99,000円</td>
+<td>506円</td>
+</tr>
+<tr>
+<td>15t未満</td>
+<td>136,400円</td>
+<td>161,700円</td>
+<td>726円</td>
+</tr>
+<tr>
+<td>20t未満</td>
+<td>173,800円</td>
+<td>205,700円</td>
+<td>968円</td>
+</tr>
+</table>
+</div>
+
+<div class="note-box">
+<h3>船舶料金について</h3>
+<ul>
+<li>滞船料は、上架した日を含めて10日間無料です。</li>
+<li>リフト使用での作業時間は、原則として2時間以内です。</li>
+<li>当社の都合により、リフト上架できない場合があります。</li>
+<li>上架船台の拡張等、特殊な手当を要する船舶の上架については、5t増しの上架料金となります。</li>
+<li>表示料金は税込みです。</li>
+</ul>
+</div>
 
 <div class="note-box">
 <h3>利用可能設備</h3>
 <ul>
 <li>リフト式上架設備</li>
 <li>高圧洗浄機</li>
+<li>水道設備</li>
 </ul>
-</div>
-
-<h3>5トン未満</h3>
-
-<table class="fee-table">
-<tr>
-<th>項目</th>
-<th>料金</th>
-</tr>
-<tr>
-<td>上架料</td>
-<td>準備中</td>
-</tr>
-<tr>
-<td>滞船料（1〜10日間）</td>
-<td>準備中</td>
-</tr>
-<tr>
-<td>滞船料（11日目以降）</td>
-<td>準備中</td>
-</tr>
-</table>
-
-<h3>5トン以上</h3>
-
-<table class="fee-table">
-<tr>
-<th>項目</th>
-<th>料金</th>
-</tr>
-<tr>
-<td>上架料</td>
-<td>準備中</td>
-</tr>
-<tr>
-<td>滞船料（1〜10日間）</td>
-<td>準備中</td>
-</tr>
-<tr>
-<td>滞船料（11日目以降）</td>
-<td>準備中</td>
-</tr>
-</table>
-
-<h3>10トン以上</h3>
-
-<table class="fee-table">
-<tr>
-<th>項目</th>
-<th>料金</th>
-</tr>
-<tr>
-<td>上架料</td>
-<td>準備中</td>
-</tr>
-<tr>
-<td>滞船料（1〜10日間）</td>
-<td>準備中</td>
-</tr>
-<tr>
-<td>滞船料（11日目以降）</td>
-<td>準備中</td>
-</tr>
-</table>
-
-<div class="note-box">
-<h3>越冬利用について</h3>
-<p>
-当施設では越冬利用にも対応しております。詳細な利用条件や料金についてはお問い合わせください。
-</p>
 </div>
 
 </div>
@@ -242,16 +322,19 @@ gtag('config', 'G-6HY648SB9S');
 <h2>プレジャーボートをご利用の方</h2>
 
 <p>
-プレジャーボート利用者向けの年間契約サービスです。
+プレジャーボート利用者向けの利用料金です。上架・下架作業は利用者ご自身で行っていただきます。
 </p>
 
 <p>
-上架・下架作業は利用者ご自身で行っていただきます。<br>
 また、船体洗浄やメンテナンス作業等にご利用いただける水道設備を備えています。
 </p>
 
+<div class="pb-grid">
+
+<div>
 <h3>日帰り利用</h3>
 
+<div class="table-wrap">
 <table class="fee-table">
 <tr>
 <th>項目</th>
@@ -271,12 +354,16 @@ gtag('config', 'G-6HY648SB9S');
 </tr>
 <tr>
 <td>契約形態</td>
-<td>陸上保管（場所貸し）</td>
+<td>年間契約</td>
 </tr>
 </table>
+</div>
+</div>
 
+<div>
 <h3>陸上保管</h3>
 
+<div class="table-wrap">
 <table class="fee-table">
 <tr>
 <th>項目</th>
@@ -299,11 +386,18 @@ gtag('config', 'G-6HY648SB9S');
 <td>年間契約</td>
 </tr>
 </table>
+</div>
+</div>
 
-<p>
-プレジャーボートの上架・下架作業は利用者ご自身で行っていただきます。
-</p>
+</div>
 
+<div class="note-box">
+<h3>プレジャーボート利用について</h3>
+<ul>
+<li>プレジャーボートの上架・下架作業は利用者ご自身で行っていただきます。</li>
+<li>水道設備をご利用いただけます。</li>
+<li>詳細な利用条件についてはお問い合わせください。</li>
+</ul>
 </div>
 
 </div>
@@ -311,6 +405,8 @@ gtag('config', 'G-6HY648SB9S');
 <div class="note">
 <p>※料金は予告なく変更となる場合があります。</p>
 <p>※詳細についてはお問い合わせページよりご確認ください。</p>
+</div>
+
 </div>
 
 </section>
@@ -321,3 +417,4 @@ gtag('config', 'G-6HY648SB9S');
 
 </body>
 </html>
+
