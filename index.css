@@ -179,6 +179,42 @@ footer{
     margin-top:80px;
 }
 
+.contact-home{
+    background:#f8f9fa;
+    padding:55px 40px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    border-top:5px solid #00194C;
+}
+
+.contact-home h2{
+    color:#00194C;
+    font-size:34px;
+    margin-top:0;
+    margin-bottom:25px;
+}
+
+.contact-home p{
+    font-size:18px;
+    line-height:2;
+}
+
+.contact-home-button{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 32px;
+    background:#00194C;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:700;
+}
+
+.contact-home-button:hover{
+    background:#003366;
+}
+
 @media(max-width:900px){
 
     header{
