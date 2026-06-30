@@ -1,45 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HY648SB9S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-6HY648SB9S');
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6HY648SB9S');
 </script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guide｜Iwanai Area Ship Lift</title>
+
+<title>Guide｜Iwanai Area Ship Lift Corporation</title>
+
+<meta name="description" content="User guide for pleasure boat use at Iwanai Area Ship Lift Corporation. Information about annual contracts, day-use, dry storage, available facilities, and how to use the facility.">
+
+<link rel="canonical" href="https://iwanaiboatlift.github.io/en/guide/">
+
+<meta property="og:title" content="Guide｜Iwanai Area Ship Lift Corporation">
+<meta property="og:description" content="User guide for pleasure boat use, annual contracts, day-use, dry storage, and available facilities at Iwanai Port, Hokkaido.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iwanaiboatlift.github.io/en/guide/">
+<meta property="og:image" content="https://iwanaiboatlift.github.io/Img/OGImage.png">
+<meta property="og:site_name" content="Iwanai Area Ship Lift Corporation">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is advance contact required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Please contact us in advance before using the facility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the facility handle haul-out and launching for pleasure boats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For pleasure boats, haul-out and launching operations must be carried out by the boat owner or user."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are water facilities available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Water facilities are available for hull washing and basic maintenance work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a high-pressure washer available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The high-pressure washer is available only for certain vessels due to hose length limitations. Please contact us for details."
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="stylesheet" href="../../index.css">
+
+<style>
+
+.guide-grid,
+.flow-grid,
+.equipment-grid{
+    display:grid;
+    gap:40px;
+    margin-top:40px;
+}
+
+.guide-grid{
+    grid-template-columns:1fr;
+}
+
+.flow-grid{
+    grid-template-columns:repeat(4, 1fr);
+}
+
+.equipment-grid{
+    grid-template-columns:repeat(2, 1fr);
+}
+
+.guide-card,
+.info-card,
+.flow-item,
+.equipment-item,
+.faq-item{
+    background:#f8f9fa;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+.section-title{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#666;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.guide-card h2,
+.info-card h2{
+    color:#003366;
+    font-size:28px;
+    border-bottom:2px solid #003366;
+    padding-bottom:10px;
+    margin-top:0;
+    margin-bottom:25px;
+}
+
+h3{
+    color:#003366;
+}
+
+p,
+li{
+    font-size:17px;
+    line-height:2;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.info-section{
+    margin-top:70px;
+}
+
+.flow-number{
+    color:#003366;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+@media(max-width:900px){
+
+    .guide-grid,
+    .flow-grid,
+    .equipment-grid{
+        grid-template-columns:1fr;
+    }
+
+    .guide-card,
+    .info-card,
+    .flow-item,
+    .equipment-item,
+    .faq-item{
+        padding:25px;
+    }
+
+}
+
+</style>
+
 </head>
+
 <body>
 
 <header>
 
 <div class="logo">
-  <img src="../../img/logo.png" alt="">
+<img src="../../Img/Hplogo.png" alt="Iwanai Area Ship Lift Corporation logo">
 </div>
 
 <nav>
-<a href="/en/">Home</a>
+<a href="/en/">Top</a>
 <a href="/en/guide/">Guide</a>
-<a href="/en/fee/">Fees</a>
+<a href="/en/fee/">Fee</a>
 <a href="/en/access/">Access</a>
 <a href="/en/contact/">Contact</a>
-<a href="../../">日本語</a>
+<a href="/">Japanese</a>
 </nav>
 
 </header>
 
 <section class="hero">
+
 <div class="hero-overlay">
+
 <h1>Guide</h1>
-<p>Enter content here.</p>
+
+<p>
+User guide for pleasure boat use at Iwanai Port
+</p>
+
 </div>
+
 </section>
 
+<section class="container">
+
+<div class="guide-grid">
+
+<div class="guide-card">
+
+<div class="section-title">PLEASURE BOATS</div>
+
+<h2>For Pleasure Boat Users</h2>
+
+<p>
+This guide explains how to use the facility for pleasure boats.
+</p>
+
+<ul>
+<li>Contract type: Annual contract</li>
+<li>Available use: Day-use and dry storage</li>
+<li>Haul-out / launching: To be carried out by the boat owner or user</li>
+<li>Available facility: Water facilities may be used for hull washing and maintenance work</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="info-section info-card">
+
+<div class="section-title">FLOW</div>
+
+<h2>How to Use the Facility</h2>
+
+<div class="flow-grid">
+
+<div class="flow-item">
+
+<div class="flow-number">STEP 01</div>
+
+<h3>Contact Us</h3>
+
+<p>
+Please contact us in advance with your preferred date, boat details, and intended use.
+</p>
+
+</div>
+
+<div class="flow-item">
+
+<div class="flow-number">STEP 02</div>
+
+<h3>Confirm Details</h3>
+
+<p>
+We will confirm the schedule, type of use, facility conditions, and applicable fees.
+</p>
+
+</div>
+<div class="flow-item">
+
+<div class="flow-number">STEP 03</div>
+
+<h3>Use the Facility</h3>
+
+<p>
+On the scheduled day, please carry out the haul-out or launching operation yourself while following all safety instructions.
+</p>
+
+</div>
+
+<div class="flow-item">
+
+<div class="flow-number">STEP 04</div>
+
+<h3>Maintenance</h3>
+
+<p>
+You may use the water facilities for hull washing and basic maintenance work during your visit.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="info-section info-card">
+
+<div class="section-title">FACILITIES</div>
+
+<h2>Available Facilities</h2>
+
+<div class="equipment-grid">
+
+<div class="equipment-item">
+
+<h3>Boat Lift</h3>
+
+<p>
+A lift system for hauling pleasure boats in and out of the water.
+</p>
+
+</div>
+
+<div class="equipment-item">
+
+<h3>Water Supply</h3>
+
+<p>
+Water is available for hull washing and maintenance work.
+</p>
+
+</div>
+
+<div class="equipment-item">
+
+<h3>Maintenance Area</h3>
+
+<p>
+A work area is available for inspection, cleaning and light maintenance.
+</p>
+
+</div>
+
+<div class="equipment-item">
+
+<h3>Annual Storage</h3>
+
+<p>
+Dry storage is available for boats under an annual contract.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="info-section info-card">
+
+<div class="section-title">FAQ</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+
+<h3>Do I need to make a reservation?</h3>
+
+<p>
+Yes. Please contact us before using the facility.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Will the staff haul my boat in or out?</h3>
+
+<p>
+No. Haul-out and launching operations must be carried out by the boat owner or user.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Can I use water for washing my boat?</h3>
+
+<p>
+Yes. Water facilities are available for hull washing and maintenance work.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Can I use a high-pressure washer?</h3>
+
+<p>
+Please contact us in advance regarding availability.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© Iwanai Boat Lift Corporation
+
+</footer>
+
 </body>
+
 </html>
