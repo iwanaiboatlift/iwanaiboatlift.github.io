@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
 
 <!-- Google tag (gtag.js) -->
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HY648SB9S"></script>
 
 <script>
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+
+function gtag(){
+    dataLayer.push(arguments);
+}
+
 gtag('js', new Date());
 gtag('config', 'G-6HY648SB9S');
 </script>
@@ -18,18 +20,48 @@ gtag('config', 'G-6HY648SB9S');
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>利用案内｜岩内地方船舶上架公社</title>
-<meta name="description" content="岩内地方船舶上架公社の利用案内です。船舶・漁船の上架下架、プレジャーボートの年間契約、日帰り利用、陸上保管、利用可能設備についてご案内します。">
 
-<link rel="canonical" href="https://iwanaiboatlift.github.io/guide/">
+<meta
+name="description"
+content="岩内地方船舶上架公社の利用案内です。船舶・漁船の上架・下架、プレジャーボートの年間契約、陸上保管、上下架スペース、利用可能設備についてご案内します。"
+>
 
-<meta property="og:title" content="利用案内｜岩内地方船舶上架公社">
-<meta property="og:description" content="船舶・漁船の上架下架、プレジャーボートの年間契約、日帰り利用、陸上保管、利用可能設備についてご案内します。">
+<link
+rel="canonical"
+href="https://iwanaiboatlift.github.io/guide/"
+>
+
+<meta
+property="og:title"
+content="利用案内｜岩内地方船舶上架公社"
+>
+
+<meta
+property="og:description"
+content="船舶・漁船の上架・下架、プレジャーボートの年間契約、陸上保管、上下架スペース、利用可能設備についてご案内します。"
+>
+
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://iwanaiboatlift.github.io/guide/">
-<meta property="og:image" content="https://iwanaiboatlift.github.io/Img/jouka-setubi.png">
-<meta property="og:site_name" content="岩内地方船舶上架公社">
 
-<meta name="twitter:card" content="summary_large_image">
+<meta
+property="og:url"
+content="https://iwanaiboatlift.github.io/guide/"
+>
+
+<meta
+property="og:image"
+content="https://iwanaiboatlift.github.io/Img/jouka-setubi.png"
+>
+
+<meta
+property="og:site_name"
+content="岩内地方船舶上架公社"
+>
+
+<meta
+name="twitter:card"
+content="summary_large_image"
+>
 
 <script type="application/ld+json">
 {
@@ -49,7 +81,15 @@ gtag('config', 'G-6HY648SB9S');
       "name": "プレジャーボートの上架・下架は依頼できますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "プレジャーボートの上架・下架作業は利用者ご自身で行っていただきます。"
+        "text": "プレジャーボートの上架・下架作業は、浮桟橋を使用して利用者ご自身で行っていただきます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "プレジャーボートは一年中上下架できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "浮桟橋は例年11月頃に撤去するため、撤去後はプレジャーボートの上下架をご利用いただけません。利用可能期間については事前にお問い合わせください。"
       }
     },
     {
@@ -75,6 +115,7 @@ gtag('config', 'G-6HY648SB9S');
 <link rel="stylesheet" href="../index.css">
 
 <style>
+
 .guide-grid,
 .flow-grid,
 .equipment-grid{
@@ -124,7 +165,11 @@ gtag('config', 'G-6HY648SB9S');
     margin-bottom:25px;
 }
 
-h3{
+.info-card h3,
+.guide-card h3,
+.flow-item h3,
+.equipment-item h3,
+.faq-item h3{
     color:#003366;
 }
 
@@ -135,7 +180,7 @@ li{
 }
 
 ul{
-    padding-left:20px;
+    padding-left:22px;
 }
 
 .info-section{
@@ -148,10 +193,218 @@ ul{
     letter-spacing:2px;
 }
 
+/* 利用区分 */
+
+.use-label{
+    display:inline-block;
+    margin-bottom:14px;
+    padding:5px 12px;
+    background:#003366;
+    color:#fff;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.use-label.pleasure{
+    background:#176b87;
+}
+
+/* 船舶・プレジャーボート別の流れ */
+
+.flow-heading{
+    margin-top:40px;
+    margin-bottom:10px;
+    font-size:22px;
+    color:#003366;
+}
+
+.flow-heading:first-of-type{
+    margin-top:10px;
+}
+
+/* ギャラリー */
+
+.gallery-intro{
+    margin-bottom:25px;
+}
+
+.gallery-subsection{
+    margin-top:45px;
+}
+
+.gallery-subsection:first-of-type{
+    margin-top:20px;
+}
+
+.gallery-subsection h3{
+    margin-bottom:8px;
+    font-size:23px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:22px;
+    margin-top:25px;
+}
+
+.gallery-item{
+    margin:0;
+    overflow:hidden;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+}
+
+.gallery-button{
+    display:block;
+    width:100%;
+    padding:0;
+    border:0;
+    background:none;
+    cursor:zoom-in;
+}
+
+.gallery-button img{
+    display:block;
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:transform 0.3s ease;
+}
+
+.gallery-button:hover img{
+    transform:scale(1.04);
+}
+
+.gallery-item figcaption{
+    padding:15px 18px 18px;
+    color:#444;
+    font-size:15px;
+    line-height:1.7;
+    text-align:center;
+}
+
+/* 注意書き */
+
+.notice-box{
+    margin-top:30px;
+    padding:25px;
+    background:#fff8e8;
+    border-left:5px solid #c98100;
+    border-radius:8px;
+}
+
+.notice-box h3{
+    margin-top:0;
+    color:#8a5700;
+}
+
+.notice-box p:last-child,
+.notice-box ul:last-child{
+    margin-bottom:0;
+}
+
+/* ライトボックス */
+
+.lightbox{
+    position:fixed;
+    inset:0;
+    z-index:5000;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    background:rgba(0,0,0,0.88);
+}
+
+.lightbox.is-open{
+    display:flex;
+}
+
+.lightbox-content{
+    position:relative;
+    width:min(1200px, 100%);
+    max-height:92vh;
+    text-align:center;
+}
+
+.lightbox-image{
+    display:block;
+    max-width:100%;
+    max-height:82vh;
+    margin:0 auto;
+    border-radius:8px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.45);
+}
+
+.lightbox-caption{
+    margin:14px 50px 0;
+    color:#fff;
+    font-size:16px;
+    line-height:1.7;
+}
+
+.lightbox-close{
+    position:absolute;
+    top:-18px;
+    right:-10px;
+    width:44px;
+    height:44px;
+    border:0;
+    border-radius:50%;
+    background:#fff;
+    color:#222;
+    font-size:29px;
+    line-height:1;
+    cursor:pointer;
+}
+
+.lightbox-nav{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:48px;
+    height:60px;
+    border:0;
+    border-radius:8px;
+    background:rgba(255,255,255,0.88);
+    color:#222;
+    font-size:32px;
+    cursor:pointer;
+}
+
+.lightbox-prev{
+    left:10px;
+}
+
+.lightbox-next{
+    right:10px;
+}
+
+body.lightbox-open{
+    overflow:hidden;
+}
+
+@media(max-width:1100px){
+
+    .flow-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+}
+
 @media(max-width:900px){
+
     .guide-grid,
     .flow-grid,
-    .equipment-grid{
+    .equipment-grid,
+    .gallery-grid{
         grid-template-columns:1fr;
     }
 
@@ -162,7 +415,46 @@ ul{
     .faq-item{
         padding:25px;
     }
+
+    .guide-card h2,
+    .info-card h2{
+        font-size:25px;
+    }
+
+    .gallery-button img{
+        height:260px;
+    }
+
+    .lightbox{
+        padding:15px;
+    }
+
+    .lightbox-close{
+        top:-8px;
+        right:0;
+    }
+
+    .lightbox-nav{
+        width:42px;
+        height:52px;
+        font-size:27px;
+    }
+
+    .lightbox-prev{
+        left:2px;
+    }
+
+    .lightbox-next{
+        right:2px;
+    }
+
+    .lightbox-caption{
+        margin:12px 42px 0;
+        font-size:14px;
+    }
+
 }
+
 </style>
 
 </head>
@@ -172,7 +464,10 @@ ul{
 <header>
 
 <div class="logo">
-<img src="../Img/Hplogo.png" alt="岩内地方船舶上架公社ロゴ">
+<img
+src="../Img/Hplogo.png"
+alt="岩内地方船舶上架公社ロゴ"
+>
 </div>
 
 <nav>
@@ -206,27 +501,43 @@ ul{
 
 <div class="guide-card">
 
-<div class="section-title">COMMERCIAL VESSELS</div>
+<div class="section-title">
+COMMERCIAL VESSELS
+</div>
+
+<span class="use-label">
+船舶・漁船
+</span>
+
 <h2>船舶・漁船をご利用の方</h2>
 
 <ul>
-<li>利用方法：電話予約（お問い合わせからご確認ください）</li>
-<li>作業内容：船舶の上架・下架作業</li>
-<li>その他：保管期間や料金については料金表をご確認ください</li>
+<li>利用方法：事前に電話でご予約ください</li>
+<li>作業内容：リフト式上架設備による船舶の上架・下架</li>
+<li>保管・整備：上架後の点検、整備、船体洗浄等にご利用いただけます</li>
+<li>料金：船舶の屯数、時期、作業時間等により異なります</li>
 </ul>
 
 </div>
 
 <div class="guide-card">
 
-<div class="section-title">PLEASURE BOATS</div>
+<div class="section-title">
+PLEASURE BOATS
+</div>
+
+<span class="use-label pleasure">
+プレジャーボート
+</span>
+
 <h2>プレジャーボートをご利用の方</h2>
 
 <ul>
 <li>契約方法：年間契約</li>
 <li>利用方法：日帰り利用・陸上保管</li>
-<li>上架・下架：利用者ご自身で実施</li>
-<li>設備：水道設備をご利用いただけます</li>
+<li>上架・下架：浮桟橋を使用して利用者ご自身で実施</li>
+<li>保管場所：専用の陸上保管エリアをご利用いただけます</li>
+<li>設備：水道設備、点検・整備スペースをご利用いただけます</li>
 </ul>
 
 </div>
@@ -235,33 +546,136 @@ ul{
 
 <div class="info-section info-card">
 
-<div class="section-title">FLOW</div>
+<div class="section-title">
+FLOW
+</div>
+
 <h2>利用の流れ</h2>
+
+<h3 class="flow-heading">
+船舶・漁船をご利用の場合
+</h3>
 
 <div class="flow-grid">
 
 <div class="flow-item">
-<div class="flow-number">STEP 01</div>
+
+<div class="flow-number">
+STEP 01
+</div>
+
+<h3>お問い合わせ・予約</h3>
+
+<p>
+利用希望日、船舶の屯数、作業内容などを事前にお知らせください。
+</p>
+
+</div>
+
+<div class="flow-item">
+
+<div class="flow-number">
+STEP 02
+</div>
+
+<h3>日程・料金確認</h3>
+
+<p>
+作業日程、上架内容、利用期間、料金等について確認します。
+</p>
+
+</div>
+
+<div class="flow-item">
+
+<div class="flow-number">
+STEP 03
+</div>
+
+<h3>上架・下架</h3>
+
+<p>
+当施設のリフト式上架設備を使用して、船舶の上架または下架を行います。
+</p>
+
+</div>
+
+<div class="flow-item">
+
+<div class="flow-number">
+STEP 04
+</div>
+
+<h3>点検・整備</h3>
+
+<p>
+上架後は、必要に応じて船体洗浄、点検、整備、保管等にご利用いただけます。
+</p>
+
+</div>
+
+</div>
+
+<h3 class="flow-heading">
+プレジャーボートをご利用の場合
+</h3>
+
+<div class="flow-grid">
+
+<div class="flow-item">
+
+<div class="flow-number">
+STEP 01
+</div>
+
 <h3>お問い合わせ</h3>
-<p>利用希望日、船舶の内容、利用目的についてお問い合わせください。</p>
+
+<p>
+年間契約、日帰り利用、陸上保管の希望についてお問い合わせください。
+</p>
+
 </div>
 
 <div class="flow-item">
-<div class="flow-number">STEP 02</div>
-<h3>日程調整</h3>
-<p>作業日程、利用内容、料金等について確認します。</p>
+
+<div class="flow-number">
+STEP 02
+</div>
+
+<h3>契約・利用確認</h3>
+
+<p>
+契約内容、保管場所、利用方法、料金、利用可能期間等について確認します。
+</p>
+
 </div>
 
 <div class="flow-item">
-<div class="flow-number">STEP 03</div>
-<h3>施設利用</h3>
-<p>当日は安全に配慮しながら、上架・下架または保管利用を行います。</p>
+
+<div class="flow-number">
+STEP 03
+</div>
+
+<h3>利用者による上下架</h3>
+
+<p>
+浮桟橋を使用し、プレジャーボートの上架・下架は利用者ご自身で行っていただきます。
+</p>
+
 </div>
 
 <div class="flow-item">
-<div class="flow-number">STEP 04</div>
-<h3>作業・保管</h3>
-<p>必要に応じて船体洗浄、点検、整備、保管等にご利用いただけます。</p>
+
+<div class="flow-number">
+STEP 04
+</div>
+
+<h3>保管・メンテナンス</h3>
+
+<p>
+陸上保管エリアのほか、水道設備や作業スペースをご利用いただけます。
+</p>
+
 </div>
 
 </div>
@@ -270,29 +684,249 @@ ul{
 
 <div class="info-section info-card">
 
-<div class="section-title">EQUIPMENT</div>
+<div class="section-title">
+PLEASURE BOAT AREA
+</div>
+
+<h2>プレジャーボート保管エリア・上下架スペース</h2>
+
+<p class="gallery-intro">
+プレジャーボートの年間契約者が利用する陸上保管エリアと、上下架時に使用する浮桟橋をご紹介します。
+写真をクリックすると拡大してご覧いただけます。
+</p>
+
+<div class="gallery-subsection">
+
+<h3>陸上保管エリア</h3>
+
+<p>
+プレジャーボートは、年間契約により敷地内の陸上保管エリアをご利用いただけます。
+保管場所では、船体の点検、清掃、整備等の作業も行えます。
+</p>
+
+<div class="gallery-grid">
+
+<figure class="gallery-item">
+
+<button
+type="button"
+class="gallery-button"
+data-image="../Img/IMG_3521.jpeg"
+data-caption="プレジャーボート陸上保管エリアの全景"
+>
+
+<img
+src="../Img/IMG_3521.jpeg"
+alt="プレジャーボート陸上保管エリアの全景"
+loading="lazy"
+>
+
+</button>
+
+<figcaption>
+プレジャーボート陸上保管エリアの全景
+</figcaption>
+
+</figure>
+
+<figure class="gallery-item">
+
+<button
+type="button"
+class="gallery-button"
+data-image="../Img/IMG_3522.jpeg"
+data-caption="敷地内の保管スペースと通路"
+>
+
+<img
+src="../Img/IMG_3522.jpeg"
+alt="敷地内のプレジャーボート保管スペースと通路"
+loading="lazy"
+>
+
+</button>
+
+<figcaption>
+敷地内の保管スペースと通路
+</figcaption>
+
+</figure>
+
+<figure class="gallery-item">
+
+<button
+type="button"
+class="gallery-button"
+data-image="../Img/IMG_3523.jpeg"
+data-caption="プレジャーボートが並ぶ保管エリア"
+>
+
+<img
+src="../Img/IMG_3523.jpeg"
+alt="プレジャーボートが並ぶ陸上保管エリア"
+loading="lazy"
+>
+
+</button>
+
+<figcaption>
+プレジャーボートが並ぶ保管エリア
+</figcaption>
+
+</figure>
+
+</div>
+
+</div>
+
+<div class="gallery-subsection">
+
+<h3>プレジャーボート上下架スペース</h3>
+
+<p>
+プレジャーボートは、施設前面の上下架スペースと浮桟橋を使用して上架・下架を行います。
+上架・下架作業は、利用者ご自身で行っていただきます。
+</p>
+
+<div class="gallery-grid">
+
+<figure class="gallery-item">
+
+<button
+type="button"
+class="gallery-button"
+data-image="../Img/IMG_3527.jpeg"
+data-caption="浮桟橋付近のプレジャーボート上下架スペース"
+>
+
+<img
+src="../Img/IMG_3527.jpeg"
+alt="浮桟橋付近のプレジャーボート上下架スペース"
+loading="lazy"
+>
+
+</button>
+
+<figcaption>
+浮桟橋付近の上下架スペース
+</figcaption>
+
+</figure>
+
+<figure class="gallery-item">
+
+<button
+type="button"
+class="gallery-button"
+data-image="../Img/IMG_3528.jpeg"
+data-caption="陸側から見たプレジャーボート用浮桟橋"
+>
+
+<img
+src="../Img/IMG_3528.jpeg"
+alt="陸側から見たプレジャーボート用浮桟橋"
+loading="lazy"
+>
+
+</button>
+
+<figcaption>
+陸側から見たプレジャーボート用浮桟橋
+</figcaption>
+
+</figure>
+
+<figure class="gallery-item">
+
+<button
+type="button"
+class="gallery-button"
+data-image="../Img/IMG_3531.jpeg"
+data-caption="浮桟橋側から見た上下架スペース"
+>
+
+<img
+src="../Img/IMG_3531.jpeg"
+alt="浮桟橋側から見たプレジャーボート上下架スペース"
+loading="lazy"
+>
+
+</button>
+
+<figcaption>
+浮桟橋側から見た上下架スペース
+</figcaption>
+
+</figure>
+
+</div>
+
+<div class="notice-box">
+
+<h3>浮桟橋の利用期間について</h3>
+
+<p>
+浮桟橋は例年11月頃に撤去するため、撤去後はプレジャーボートの上架・下架をご利用いただけません。
+</p>
+
+<p>
+撤去時期は天候や施設の状況により前後する場合があります。利用可能期間については、事前にお問い合わせください。
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="info-section info-card">
+
+<div class="section-title">
+EQUIPMENT
+</div>
+
 <h2>利用可能設備</h2>
 
 <div class="equipment-grid">
 
 <div class="equipment-item">
+
 <h3>リフト式上架設備</h3>
-<p>船舶の上架・下架に使用する設備です。</p>
+
+<p>
+船舶・漁船の上架・下架に使用する設備です。プレジャーボートの上下架には使用しません。
+</p>
+
 </div>
 
 <div class="equipment-item">
+
 <h3>高圧洗浄機</h3>
-<p>ホースの距離の関係上、船舶のみ船体洗浄等にご利用いただけます。</p>
+
+<p>
+ホースの距離の関係上、船舶のみ船体洗浄等にご利用いただけます。
+</p>
+
 </div>
 
 <div class="equipment-item">
+
 <h3>水道設備</h3>
-<p>船体洗浄やメンテナンス作業時にご利用いただけます。</p>
+
+<p>
+船体洗浄やメンテナンス作業時にご利用いただけます。
+</p>
+
 </div>
 
 <div class="equipment-item">
-<h3>作業スペース</h3>
-<p>点検・整備・保管等の作業場所としてご利用いただけます。</p>
+
+<h3>作業・保管スペース</h3>
+
+<p>
+船体の点検、整備、清掃、陸上保管等にご利用いただけます。
+</p>
+
 </div>
 
 </div>
@@ -301,36 +935,229 @@ ul{
 
 <div class="info-section info-card">
 
-<div class="section-title">FAQ</div>
+<div class="section-title">
+FAQ
+</div>
+
 <h2>よくある質問</h2>
 
 <div class="faq-item">
+
 <h3>Q. 予約は必要ですか？</h3>
-<p>A. 船舶・漁船、プレジャーボートともに、事前にお問い合わせください。</p>
+
+<p>
+A. 船舶・漁船、プレジャーボートともに、事前にお問い合わせください。
+</p>
+
 </div>
 
 <div class="faq-item">
+
 <h3>Q. プレジャーボートの上架・下架は依頼できますか？</h3>
-<p>A. プレジャーボートの上架・下架作業は利用者ご自身で行っていただきます。</p>
+
+<p>
+A. プレジャーボートの上架・下架作業は、浮桟橋を使用して利用者ご自身で行っていただきます。
+</p>
+
 </div>
 
 <div class="faq-item">
+
+<h3>Q. プレジャーボートは一年中上下架できますか？</h3>
+
+<p>
+A. 浮桟橋は例年11月頃に撤去するため、撤去後はプレジャーボートの上架・下架をご利用いただけません。利用可能期間については事前にお問い合わせください。
+</p>
+
+</div>
+
+<div class="faq-item">
+
 <h3>Q. 水道は利用できますか？</h3>
-<p>A. 船体洗浄やメンテナンス作業等にご利用いただけます。</p>
+
+<p>
+A. 船体洗浄やメンテナンス作業等にご利用いただけます。
+</p>
+
 </div>
 
 <div class="faq-item">
+
 <h3>Q. 高圧洗浄機は利用できますか？</h3>
-<p>A. ホースの距離の関係上、船舶のみ船体洗浄等にご利用いただけます。</p>
+
+<p>
+A. ホースの距離の関係上、船舶のみ船体洗浄等にご利用いただけます。
+</p>
+
 </div>
 
 </div>
 
 </section>
 
+<div
+class="lightbox"
+id="galleryLightbox"
+role="dialog"
+aria-modal="true"
+aria-label="写真の拡大表示"
+aria-hidden="true"
+>
+
+<div class="lightbox-content">
+
+<button
+type="button"
+class="lightbox-close"
+id="lightboxClose"
+aria-label="拡大表示を閉じる"
+>
+×
+</button>
+
+<button
+type="button"
+class="lightbox-nav lightbox-prev"
+id="lightboxPrev"
+aria-label="前の写真"
+>
+‹
+</button>
+
+<img
+src=""
+alt=""
+class="lightbox-image"
+id="lightboxImage"
+>
+
+<button
+type="button"
+class="lightbox-nav lightbox-next"
+id="lightboxNext"
+aria-label="次の写真"
+>
+›
+</button>
+
+<p
+class="lightbox-caption"
+id="lightboxCaption"
+></p>
+
+</div>
+
+</div>
+
 <footer>
 © Iwanai Boat Lift Corporation
 </footer>
+
+<script>
+
+const galleryButtons = Array.from(
+    document.querySelectorAll('.gallery-button')
+);
+
+const lightbox = document.getElementById('galleryLightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxCaption = document.getElementById('lightboxCaption');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxPrev = document.getElementById('lightboxPrev');
+const lightboxNext = document.getElementById('lightboxNext');
+
+let currentImageIndex = 0;
+
+function showGalleryImage(index){
+
+    if(index < 0){
+        index = galleryButtons.length - 1;
+    }
+
+    if(index >= galleryButtons.length){
+        index = 0;
+    }
+
+    currentImageIndex = index;
+
+    const selectedButton = galleryButtons[currentImageIndex];
+    const imagePath = selectedButton.dataset.image;
+    const imageCaption = selectedButton.dataset.caption;
+
+    lightboxImage.src = imagePath;
+    lightboxImage.alt = imageCaption;
+    lightboxCaption.textContent = imageCaption;
+}
+
+function openLightbox(index){
+
+    showGalleryImage(index);
+
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+
+    document.body.classList.add('lightbox-open');
+
+    lightboxClose.focus();
+}
+
+function closeLightbox(){
+
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+
+    document.body.classList.remove('lightbox-open');
+
+    galleryButtons[currentImageIndex].focus();
+}
+
+galleryButtons.forEach(function(button, index){
+
+    button.addEventListener('click', function(){
+        openLightbox(index);
+    });
+
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+
+lightboxPrev.addEventListener('click', function(){
+    showGalleryImage(currentImageIndex - 1);
+});
+
+lightboxNext.addEventListener('click', function(){
+    showGalleryImage(currentImageIndex + 1);
+});
+
+lightbox.addEventListener('click', function(event){
+
+    if(event.target === lightbox){
+        closeLightbox();
+    }
+
+});
+
+document.addEventListener('keydown', function(event){
+
+    if(!lightbox.classList.contains('is-open')){
+        return;
+    }
+
+    if(event.key === 'Escape'){
+        closeLightbox();
+    }
+
+    if(event.key === 'ArrowLeft'){
+        showGalleryImage(currentImageIndex - 1);
+    }
+
+    if(event.key === 'ArrowRight'){
+        showGalleryImage(currentImageIndex + 1);
+    }
+
+});
+
+</script>
 
 </body>
 </html>
