@@ -1019,3 +1019,117 @@ footer {
         text-align: center;
     }
 }
+
+/* ========================================
+   上架施設紹介：2段構成
+======================================== */
+
+/* 外枠 */
+.home-page .home-lift-box {
+    padding: 32px 36px;
+}
+
+/* 上段：施設説明＋itiba.PNG */
+.home-page .home-lift-overview {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 32px;
+    align-items: center;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #dce5eb;
+}
+
+.home-page .home-lift-intro {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.home-page .home-lift-overview-image img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* 下段：設備写真＋説明 */
+.home-page .home-lift-content {
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 32px;
+    align-items: center;
+    padding-top: 26px;
+}
+
+.home-page .home-lift-image {
+    width: 100%;
+    max-width: none;
+}
+
+.home-page .home-lift-image img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* 利用案内ボタン */
+.home-page .home-lift-button {
+    display: inline-block;
+    padding: 11px 22px;
+    background: #00194C;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background .2s;
+}
+
+.home-page .home-lift-button:hover {
+    background: #003b73;
+    color: #fff;
+}
+
+/* タブレット */
+@media (max-width: 900px) {
+
+    .home-page .home-lift-overview {
+        grid-template-columns: minmax(0, 1fr) 45%;
+        gap: 22px;
+    }
+
+    .home-page .home-lift-content {
+        grid-template-columns: 45% minmax(0, 1fr);
+        gap: 22px;
+    }
+}
+
+/* スマートフォン */
+@media (max-width: 600px) {
+
+    .home-page .home-lift-box {
+        padding: 22px 18px;
+    }
+
+    .home-page .home-lift-overview,
+    .home-page .home-lift-content {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .home-page .home-lift-overview-image img {
+        height: 210px;
+    }
+
+    .home-page .home-lift-image img {
+        height: 220px;
+    }
+
+    .home-page .home-lift-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
