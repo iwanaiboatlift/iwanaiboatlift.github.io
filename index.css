@@ -1133,3 +1133,21 @@ footer {
         text-align: center;
     }
 }
+
+/* ========================================
+   itiba画像の見切れ防止
+======================================== */
+
+.home-page .home-lift-overview-image {
+    width: 100%;
+    min-width: 0;
+}
+
+.home-page .home-lift-overview-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 12px;
+}
