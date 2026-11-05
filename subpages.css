@@ -355,7 +355,7 @@
     display: grid;
     grid-template-columns: minmax(0, .95fr) minmax(0, 1.25fr);
     gap: 28px;
-    align-items: start;
+    align-items: stretch;
 }
 
 .access-page .access-info {
@@ -377,32 +377,6 @@
 .access-page .access-info h2 {
     margin-bottom: 14px;
     font-size: 22px;
-}
-
-.access-page .access-visual {
-    display: grid;
-    gap: 20px;
-    min-width: 0;
-}
-
-.access-page .access-photo {
-    margin: 0;
-    overflow: hidden;
-    border: 1px solid #dce5eb;
-    border-radius: 12px;
-    background: #f8fafb;
-}
-
-.access-page .access-photo img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.access-page .access-photo figcaption {
-    padding: 12px 18px;
-    color: #526575;
-    font-size: 13px;
 }
 
 .access-page .access-routes {
@@ -434,7 +408,7 @@
 
 .access-page .access-map {
     min-width: 0;
-    height: 360px;
+    min-height: 560px;
     overflow: hidden;
     border: 1px solid #dce5eb;
     border-radius: 12px;
@@ -616,6 +590,7 @@
 
     .access-page .access-map {
         height: 400px;
+        min-height: 0;
     }
 
 }
