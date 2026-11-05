@@ -1,0 +1,490 @@
+/* 利用案内専用。共通ヘッダー・フッターと他ページには適用しない。 */
+
+/* ページ見出し */
+.guide-page .hero {
+    min-height: 360px;
+    padding: 136px 24px 64px;
+    background-image:
+        linear-gradient(90deg, rgba(3, 22, 46, .78), rgba(3, 22, 46, .3)),
+        url('../Img/iwanai-port.JPG');
+    text-align: left;
+}
+
+.guide-page .hero-overlay {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+}
+
+.guide-page .hero h1 {
+    margin: 0;
+    font-size: clamp(32px, 3.4vw, 44px);
+    line-height: 1.5;
+    letter-spacing: .04em;
+}
+
+.guide-page .hero p {
+    max-width: 640px;
+    margin: 14px 0 0;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* コンテンツと見出し */
+.guide-page .container {
+    width: min(1120px, calc(100% - 40px));
+    margin: 56px auto 72px;
+    padding: 0;
+    color: #203145;
+}
+
+.guide-page .container p,
+.guide-page .container li {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #526575;
+}
+
+.section-title,
+.flow-number {
+    color: #39718b;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    line-height: 1.6;
+}
+
+.section-title {
+    margin-bottom: 8px;
+}
+
+.guide-card h2,
+.info-card h2 {
+    margin: 0 0 24px;
+    color: #092b48;
+    font-size: clamp(22px, 2.1vw, 28px);
+    line-height: 1.6;
+}
+
+.info-card > h2 {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #dce5eb;
+}
+
+.info-section {
+    margin-top: 64px;
+}
+
+.guide-grid,
+.flow-grid,
+.equipment-grid,
+.gallery-grid {
+    display: grid;
+    gap: 24px;
+}
+
+.guide-grid,
+.equipment-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* 利用区分：情報を2枚のカードに整理 */
+.guide-card {
+    padding: 28px;
+    background: #f8fafb;
+    border: 1px solid #e0e8ee;
+    border-top: 3px solid #1b5a7a;
+    border-radius: 12px;
+}
+
+.use-label {
+    display: inline-block;
+    margin: 8px 0 16px;
+    padding: 4px 12px;
+    border-radius: 24px;
+    background: #e8eff5;
+    color: #214c6b;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.use-label.pleasure {
+    background: #e6f2f3;
+    color: #216476;
+}
+
+.guide-card h2 {
+    font-size: clamp(20px, 1.8vw, 24px);
+}
+
+.guide-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.guide-card li {
+    padding: 12px 0;
+    border-top: 1px solid #e0e8ee;
+}
+
+.guide-card li:last-child {
+    padding-bottom: 0;
+}
+
+/* 利用の流れ：広い画面では4列、狭い画面では順に縦へ */
+.flow-heading {
+    margin: 32px 0 16px;
+    color: #173953;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.flow-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.flow-item {
+    padding: 22px 20px;
+    border: 1px solid #e0e8ee;
+    border-radius: 10px;
+    background: #f3f7f9;
+}
+
+.flow-item h3 {
+    margin: 14px 0 10px;
+    color: #173953;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.flow-item p,
+.equipment-item p {
+    margin: 0;
+}
+
+/* 施設写真 */
+.gallery-intro {
+    margin: 0 0 28px;
+}
+
+.gallery-subsection {
+    margin-top: 28px;
+}
+
+.gallery-subsection + .gallery-subsection {
+    margin-top: 36px;
+}
+
+.gallery-subsection h3 {
+    margin: 0 0 10px;
+    color: #173953;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.gallery-subsection > p {
+    margin: 0 0 20px;
+}
+
+.gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.gallery-subsection + .gallery-subsection .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gallery-item {
+    margin: 0;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e0e8ee;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(20, 45, 65, .05);
+}
+
+.gallery-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: zoom-in;
+    overflow: hidden;
+}
+
+.gallery-button img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform .3s ease;
+}
+
+.gallery-button:hover img {
+    transform: scale(1.04);
+}
+
+.gallery-button:focus-visible {
+    outline: 3px solid #39718b;
+    outline-offset: -3px;
+}
+
+.gallery-item figcaption {
+    padding: 14px 16px;
+    color: #526575;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* 季節の注意事項 */
+.notice-box {
+    margin-top: 24px;
+    padding: 22px 24px;
+    background: #fff9ed;
+    border-left: 3px solid #bd8a36;
+    border-radius: 8px;
+}
+
+.notice-box h3 {
+    margin: 0 0 10px;
+    color: #805919;
+    font-size: 18px;
+}
+
+.notice-box p {
+    margin: 10px 0 0;
+}
+
+/* 設備とFAQ：過度な影やカードの入れ子を避ける */
+.equipment-grid {
+    gap: 16px;
+}
+
+.equipment-item {
+    padding: 24px;
+    background: #f8fafb;
+    border: 1px solid #e0e8ee;
+    border-radius: 10px;
+}
+
+.equipment-item h3 {
+    margin: 0 0 10px;
+    color: #173953;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.faq-item {
+    padding: 22px 0;
+    border-bottom: 1px solid #dce5eb;
+}
+
+.faq-item h3 {
+    margin: 0 0 10px;
+    color: #173953;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.faq-item p {
+    margin: 0;
+}
+
+/* 既存の写真拡大表示 */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, .88);
+}
+
+.lightbox.is-open {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    width: min(1200px, 100%);
+    max-height: 92vh;
+    text-align: center;
+}
+
+.lightbox-image {
+    display: block;
+    max-width: 100%;
+    max-height: 82vh;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .45);
+}
+
+.lightbox-caption {
+    margin: 14px 50px 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -18px;
+    right: -10px;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: #fff;
+    color: #222;
+    font-size: 29px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 60px;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, .88);
+    color: #222;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.lightbox-prev {
+    left: 10px;
+}
+
+.lightbox-next {
+    right: 10px;
+}
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+    .flow-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .guide-page .hero {
+        min-height: 400px;
+        padding-top: 240px;
+    }
+
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .lightbox {
+        padding: 15px;
+    }
+
+    .lightbox-close {
+        top: -8px;
+        right: 0;
+    }
+
+    .lightbox-nav {
+        width: 42px;
+        height: 52px;
+        font-size: 27px;
+    }
+
+    .lightbox-prev {
+        left: 2px;
+    }
+
+    .lightbox-next {
+        right: 2px;
+    }
+
+    .lightbox-caption {
+        margin: 12px 42px 0;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .guide-page .hero {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .guide-page .container {
+        width: calc(100% - 28px);
+        margin: 36px auto 50px;
+    }
+
+    .guide-card {
+        padding: 22px 20px;
+    }
+
+    .info-section {
+        margin-top: 44px;
+    }
+
+    .flow-grid,
+    .equipment-grid,
+    .gallery-grid,
+    .gallery-subsection + .gallery-subsection .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flow-item {
+        display: grid;
+        grid-template-columns: 56px minmax(0, 1fr);
+        gap: 8px 12px;
+        padding: 20px 18px;
+    }
+
+    .flow-number {
+        grid-row: 1 / 3;
+        padding-top: 4px;
+        font-size: 11px;
+    }
+
+    .flow-item h3 {
+        margin: 0;
+    }
+
+    .flow-item p {
+        grid-column: 2;
+    }
+
+    .gallery-grid {
+        gap: 16px;
+    }
+
+    .equipment-item,
+    .notice-box {
+        padding: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-button img {
+        transition: none;
+    }
+}
