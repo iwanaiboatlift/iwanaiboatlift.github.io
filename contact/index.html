@@ -31,123 +31,11 @@ gtag('config', 'G-6HY648SB9S');
 
 <link rel="stylesheet" href="../index.css">
 
-<style>
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1.1fr 1fr;
-    gap:40px;
-    margin-top:40px;
-}
-
-.contact-card{
-    background:#f8f9fa;
-    padding:40px;
-    border-radius:12px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.1);
-}
-
-.section-title{
-    font-size:12px;
-    letter-spacing:3px;
-    color:#666;
-    font-weight:700;
-    margin-bottom:5px;
-}
-
-.contact-card h2{
-    color:#003366;
-    font-size:28px;
-    border-bottom:2px solid #003366;
-    padding-bottom:10px;
-    margin-top:0;
-    margin-bottom:25px;
-}
-
-.contact-card h3{
-    color:#003366;
-    margin-top:30px;
-    margin-bottom:10px;
-}
-
-.contact-card p,
-.contact-card li{
-    font-size:17px;
-    line-height:2;
-}
-
-.tel-link{
-    display:inline-block;
-    font-size:24px;
-    font-weight:700;
-    color:#003366;
-    text-decoration:none;
-    margin-top:8px;
-}
-
-.tel-link:hover{
-    text-decoration:underline;
-}
-
-.info-box{
-    background:#fff;
-    padding:22px;
-    border-left:5px solid #003366;
-    border-radius:8px;
-    margin-top:25px;
-}
-
-.contact-button{
-    display:inline-block;
-    margin-top:20px;
-    margin-right:10px;
-    padding:12px 24px;
-    background:#003366;
-    color:#fff;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:700;
-    transition:.3s;
-}
-
-.contact-button:hover{
-    background:#00509e;
-}
-
-@media(max-width:900px){
-
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .contact-card{
-        padding:25px;
-    }
-
-    .tel-link{
-        font-size:20px;
-    }
-
-}
-.mail-link{
-    display:inline-block;
-    font-size:20px;
-    font-weight:700;
-    color:#003366;
-    text-decoration:none;
-    margin-top:8px;
-    word-break:break-all;
-}
-
-.mail-link:hover{
-    text-decoration:underline;
-}
-
-</style>
+<link rel="stylesheet" href="../subpages.css">
 
 </head>
 
-<body>
+<body class="info-page contact-page">
 
 <header>
 
@@ -182,61 +70,45 @@ gtag('config', 'G-6HY648SB9S');
 
 <section class="container">
 
-<div class="contact-grid">
-
-<div class="contact-card">
-
+<section class="contact-main" aria-labelledby="contact-title">
 <div class="section-title">CONTACT</div>
+<h2 id="contact-title">お問い合わせ先</h2>
+<p><strong>岩内地方船舶上架公社（事務所）</strong></p>
 
-<h2>お問い合わせ先</h2>
-
-<p>
-<strong>岩内地方船舶上架公社（事務所）</strong>
-</p>
-
-<p>
-TEL：<br>
+<div class="contact-methods">
+<article class="contact-method">
+<svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 3 4 4-2 3a16 16 0 0 0 7 7l3-2 4 4-2 2C10 22 2 14 3 5Z"/></svg>
+<h3>TEL：</h3>
 <a href="tel:0135627432" class="tel-link">0135-62-7432</a>
-</p>
+</article>
 
-<p>
-E-mail：<br>
-<a href="mailto:iwanaiboatlift@gmail.com" class="mail-link">
-iwanaiboatlift@gmail.com
-</a>
-</p>
+<article class="contact-method">
+<svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+<h3>E-mail：</h3>
+<a href="mailto:iwanaiboatlift@gmail.com" class="mail-link">iwanaiboatlift@gmail.com</a>
+</article>
 
-<div class="info-box">
-
+<article class="contact-method">
+<svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
 <h3>受付時間</h3>
-
-<p>
-平日 8:00～16:00
-</p>
-
+<p class="contact-hours">平日 8:00～16:00</p>
+</article>
 </div>
 
-<p>
-施設利用、年間契約、上架・下架作業に関するご相談を受け付けております。
-</p>
-
-<p>
-作業中などにより電話に出られない場合がございます。<br>
-その際は時間をおいてお掛け直しください。
-</p>
-
+<div class="contact-notes">
+<p>施設利用、年間契約、上架・下架作業に関するご相談を受け付けております。</p>
+<p>作業中などにより電話に出られない場合がございます。<br>
+その際は時間をおいてお掛け直しください。</p>
 </div>
+</section>
 
-<div class="contact-card">
-
+<section class="contact-consultation" aria-labelledby="consultation-title">
 <div class="section-title">INFORMATION</div>
+<h2 id="consultation-title">ご相談内容について</h2>
+<p>以下のような内容について、お気軽にお問い合わせください。</p>
 
-<h2>ご相談内容について</h2>
-
-<p>
-以下のような内容について、お気軽にお問い合わせください。
-</p>
-
+<details class="consultation-details">
+<summary>ご相談内容の例を見る</summary>
 <ul>
 <li>船舶の上架・下架について</li>
 <li>プレジャーボートの年間契約について</li>
@@ -245,29 +117,17 @@ iwanaiboatlift@gmail.com
 <li>料金や利用条件について</li>
 <li>施設の場所やアクセスについて</li>
 </ul>
+</details>
 
 <div class="info-box">
-
 <h3>お問い合わせ前にご確認ください</h3>
-
-<p>
-料金や利用方法については、利用案内・料金表ページにも掲載しています。<br>
-ご不明な点がある場合は、お電話・メールにてお問い合わせください。
-</p>
-
+<p>料金や利用方法については、利用案内・料金表ページにも掲載しています。<br>
+ご不明な点がある場合は、お電話・メールにてお問い合わせください。</p>
 </div>
 
-<a href="/fee/" class="contact-button">
-料金表を見る
-</a>
-
-<a href="/access/" class="contact-button">
-アクセスを見る
-</a>
-
-</div>
-
-</div>
+<a href="/fee/" class="contact-button">料金表を見る</a>
+<a href="/access/" class="contact-button">アクセスを見る</a>
+</section>
 
 </section>
 

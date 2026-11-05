@@ -52,147 +52,12 @@ gtag('config', 'G-6HY648SB9S');
 </script>
 <link rel="stylesheet" href="../index.css">
 
-e/index.html の <style>〜</style> を、下記に丸ごと差し替えてください。
 
-<style>
-
-.fee-section{
-    margin-top:60px;
-}
-
-.fee-card{
-    background:#f8f9fa;
-    padding:45px;
-    border-radius:14px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.1);
-    margin-bottom:50px;
-}
-
-.section-title{
-    font-size:12px;
-    letter-spacing:3px;
-    color:#666;
-    font-weight:700;
-    margin-bottom:5px;
-}
-
-.fee-card h2{
-    color:#003366;
-    font-size:30px;
-    border-bottom:2px solid #003366;
-    padding-bottom:10px;
-    margin-top:0;
-    margin-bottom:25px;
-}
-
-.fee-card h3{
-    color:#003366;
-    font-size:22px;
-    margin-top:35px;
-    margin-bottom:12px;
-}
-
-.fee-card p,
-.fee-card li{
-    font-size:17px;
-    line-height:2;
-}
-
-.table-wrap{
-    overflow-x:auto;
-}
-
-.fee-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:15px;
-    margin-bottom:30px;
-    background:white;
-}
-
-.fee-table th,
-.fee-table td{
-    border:1px solid #ccc;
-    padding:14px;
-    text-align:left;
-    font-size:16px;
-}
-
-.fee-table th{
-    background:#003366;
-    color:white;
-}
-
-.fee-table tr:nth-child(even) td{
-    background:#f3f6f9;
-}
-
-.period-box{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-    margin-top:25px;
-    margin-bottom:30px;
-}
-
-.period-item{
-    background:white;
-    padding:20px;
-    border-radius:8px;
-    border-left:5px solid #003366;
-}
-
-.pb-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
-
-.note-box{
-    margin-top:25px;
-    margin-bottom:30px;
-    padding:25px;
-    background:#f0f6ff;
-    border-left:5px solid #003366;
-    border-radius:8px;
-}
-
-.note{
-    margin-top:40px;
-    padding:25px;
-    background:#f8f9fa;
-    border-left:5px solid #003366;
-    border-radius:8px;
-}
-
-@media(max-width:900px){
-
-    .fee-card{
-        padding:25px;
-    }
-
-    .period-box,
-    .pb-grid{
-        grid-template-columns:1fr;
-    }
-
-    .fee-card h2{
-        font-size:26px;
-    }
-
-    .fee-table th,
-    .fee-table td{
-        padding:12px;
-        font-size:15px;
-    }
-
-}
-
-</style>
+<link rel="stylesheet" href="../subpages.css">
 
 </head>
 
-<body>
+<body class="info-page fee-page">
 
 <header>
 
@@ -222,9 +87,14 @@ e/index.html の <style>〜</style> を、下記に丸ごと差し替えてく�
 
 <section class="container">
 
+<nav class="fee-nav" aria-label="料金表のページ内メニュー">
+<a href="#commercial-fees">船舶料金 <span aria-hidden="true">↓</span></a>
+<a href="#pleasure-fees">プレジャーボート料金 <span aria-hidden="true">↓</span></a>
+</nav>
+
 <div class="fee-section">
 
-<div class="fee-card">
+<div class="fee-card" id="commercial-fees" tabindex="-1">
 
 <div class="section-title">COMMERCIAL VESSELS</div>
 <h2>船舶・外来船をご利用の方</h2>
@@ -247,14 +117,16 @@ e/index.html の <style>〜</style> を、下記に丸ごと差し替えてく�
 
 </div>
 
+<p class="table-hint" id="fee-table-hint">表が見切れる場合は、左右にスクロールしてご覧ください。</p>
+
 <h3>夏期リフト上架料金</h3>
 
-<div class="table-wrap">
+<div class="table-wrap" role="region" aria-label="夏期リフト上架料金" tabindex="0" aria-describedby="fee-table-hint">
 <table class="fee-table">
 <tr>
-<th>屯数</th>
-<th>2時間以内</th>
-<th>2時間以降 1時間毎</th>
+<th scope="col">屯数</th>
+<th scope="col">2時間以内</th>
+<th scope="col">2時間以降 1時間毎</th>
 </tr>
 <tr>
 <td>5t未満</td>
@@ -281,12 +153,12 @@ e/index.html の <style>〜</style> を、下記に丸ごと差し替えてく�
 
 <h3>冬期リフト上架料金</h3>
 
-<div class="table-wrap">
+<div class="table-wrap" role="region" aria-label="冬期リフト上架料金" tabindex="0" aria-describedby="fee-table-hint">
 <table class="fee-table">
 <tr>
-<th>屯数</th>
-<th>2時間以内</th>
-<th>2時間以降 1時間毎</th>
+<th scope="col">屯数</th>
+<th scope="col">2時間以内</th>
+<th scope="col">2時間以降 1時間毎</th>
 </tr>
 <tr>
 <td>5t未満</td>
@@ -313,13 +185,13 @@ e/index.html の <style>〜</style> を、下記に丸ごと差し替えてく�
 
 <h3>長期上架料金・滞船料金</h3>
 
-<div class="table-wrap">
+<div class="table-wrap table-wrap--wide" role="region" aria-label="長期上架料金・滞船料金" tabindex="0" aria-describedby="fee-table-hint">
 <table class="fee-table">
 <tr>
-<th>屯数</th>
-<th>夏期料金</th>
-<th>冬期料金</th>
-<th>滞船料（1日分）</th>
+<th scope="col">屯数</th>
+<th scope="col">夏期料金</th>
+<th scope="col">冬期料金</th>
+<th scope="col">滞船料（1日分）</th>
 </tr>
 <tr>
 <td>5t未満</td>
@@ -370,7 +242,7 @@ e/index.html の <style>〜</style> を、下記に丸ごと差し替えてく�
 
 </div>
 
-<div class="fee-card">
+<div class="fee-card" id="pleasure-fees" tabindex="-1">
 
 <div class="section-title">PLEASURE BOATS</div>
 <h2>プレジャーボートをご利用の方</h2>
@@ -385,67 +257,25 @@ e/index.html の <style>〜</style> を、下記に丸ごと差し替えてく�
 
 <div class="pb-grid">
 
-<div>
+<article class="pb-plan" aria-labelledby="day-plan-title">
+<h3 id="day-plan-title">日帰り利用</h3>
+<dl class="plan-details">
+<div class="plan-price"><dt>利用料金</dt><dd>44,000円</dd></div>
+<div class="plan-term"><dt>契約形態</dt><dd>年間契約</dd></div>
+<div><dt>利用形態</dt><dd>日帰り利用</dd></div>
+<div><dt>上架・下架</dt><dd>利用者自身で実施</dd></div>
+</dl>
+</article>
 
-<h3>日帰り利用</h3>
-
-<div class="table-wrap">
-<table class="fee-table">
-<tr>
-<th>項目</th>
-<th>内容</th>
-</tr>
-<tr>
-<td>利用形態</td>
-<td>日帰り利用</td>
-</tr>
-<tr>
-<td>利用料金</td>
-<td>44,000円</td>
-</tr>
-<tr>
-<td>上架・下架</td>
-<td>利用者自身で実施</td>
-</tr>
-<tr>
-<td>契約形態</td>
-<td>年間契約</td>
-</tr>
-</table>
-</div>
-
-</div>
-
-<div>
-
-<h3>陸上保管</h3>
-
-<div class="table-wrap">
-<table class="fee-table">
-<tr>
-<th>項目</th>
-<th>内容</th>
-</tr>
-<tr>
-<td>利用形態</td>
-<td>陸上保管</td>
-</tr>
-<tr>
-<td>利用料金</td>
-<td>88,000円</td>
-</tr>
-<tr>
-<td>上架・下架</td>
-<td>利用者自身で実施</td>
-</tr>
-<tr>
-<td>契約形態</td>
-<td>年間契約</td>
-</tr>
-</table>
-</div>
-
-</div>
+<article class="pb-plan" aria-labelledby="storage-plan-title">
+<h3 id="storage-plan-title">陸上保管</h3>
+<dl class="plan-details">
+<div class="plan-price"><dt>利用料金</dt><dd>88,000円</dd></div>
+<div class="plan-term"><dt>契約形態</dt><dd>年間契約</dd></div>
+<div><dt>利用形態</dt><dd>陸上保管</dd></div>
+<div><dt>上架・下架</dt><dd>利用者自身で実施</dd></div>
+</dl>
+</article>
 
 </div>
 

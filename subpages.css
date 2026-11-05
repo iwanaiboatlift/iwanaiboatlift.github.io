@@ -1,0 +1,687 @@
+/* 料金表・アクセス・お問い合わせ専用。共通ヘッダー・フッターは変更しない。 */
+
+/* 利用案内に合わせたページ見出しとコンテンツ幅 */
+.info-page .hero {
+    min-height: 360px;
+    padding: 136px 24px 64px;
+    background-image:
+        linear-gradient(90deg, rgba(3, 22, 46, .78), rgba(3, 22, 46, .3)),
+        url('Img/iwanai-port.JPG');
+    text-align: left;
+}
+
+.info-page .hero-overlay {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+}
+
+.info-page .hero h1 {
+    margin: 0;
+    font-size: clamp(32px, 3.4vw, 44px);
+    line-height: 1.5;
+    letter-spacing: .04em;
+}
+
+.info-page .hero p {
+    max-width: 640px;
+    margin: 14px 0 0;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.info-page .container {
+    width: min(1120px, calc(100% - 40px));
+    margin: 56px auto 72px;
+    padding: 0;
+    color: #203145;
+}
+
+.info-page .container p,
+.info-page .container li {
+    color: #526575;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.info-page .section-title {
+    margin-bottom: 8px;
+    color: #39718b;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    line-height: 1.6;
+}
+
+.info-page .container h2 {
+    margin: 0 0 24px;
+    color: #092b48;
+    font-size: clamp(22px, 2.1vw, 28px);
+    line-height: 1.6;
+}
+
+.info-page .container h3 {
+    color: #173953;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+/* 既存の地図・案内リンクを押しやすいボタンに */
+.info-page .map-button,
+.info-page .contact-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 44px;
+    padding: 11px 20px;
+    border: 1px solid #00194c;
+    border-radius: 6px;
+    background: #00194c;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-decoration: none;
+    transition: background .2s;
+}
+
+.info-page .map-button:hover,
+.info-page .contact-button:hover {
+    background: #003b73;
+}
+
+.info-page .map-button:focus-visible,
+.info-page .contact-button:focus-visible,
+.info-page .tel-link:focus-visible,
+.info-page .mail-link:focus-visible,
+.fee-page .fee-nav a:focus-visible,
+.contact-page .consultation-details summary:focus-visible,
+.info-page .table-wrap:focus-visible {
+    outline: 3px solid #39718b;
+    outline-offset: 4px;
+}
+
+/* 料金表：大きな外枠をなくし、見出しと表で区切る */
+.fee-page .fee-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: auto;
+    gap: 12px;
+    margin: 0 0 32px;
+    padding: 0;
+}
+
+.fee-page .fee-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 44px;
+    padding: 10px 18px;
+    border: 1px solid #dce5eb;
+    border-radius: 24px;
+    background: #f3f7f9;
+    color: #173953;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.fee-page .fee-nav a:hover {
+    border-color: #39718b;
+    background: #e8f0f5;
+}
+
+.fee-page .fee-section {
+    margin: 0;
+}
+
+.fee-page .fee-card {
+    margin-bottom: 64px;
+    scroll-margin-top: 96px;
+}
+
+.fee-page .fee-card > h2 {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #dce5eb;
+}
+
+.fee-page .fee-card h3 {
+    margin: 32px 0 16px;
+}
+
+.fee-page .period-box,
+.fee-page .pb-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.fee-page .period-box {
+    margin: 24px 0 32px;
+    gap: 16px;
+}
+
+.fee-page .period-item {
+    padding: 18px 20px;
+    border: 1px solid #e0e8ee;
+    border-left: 3px solid #39718b;
+    border-radius: 10px;
+    background: #f3f7f9;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.fee-page .period-item strong {
+    color: #173953;
+}
+
+.fee-page .table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+    border: 1px solid #dce5eb;
+    border-radius: 10px;
+    scrollbar-color: #718b9e #edf3f6;
+}
+
+.fee-page .fee-table {
+    width: 100%;
+    min-width: 480px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    font-variant-numeric: tabular-nums;
+}
+
+.fee-page .fee-table th,
+.fee-page .fee-table td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #dce5eb;
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.fee-page .fee-table th {
+    background: #143b59;
+    color: #fff;
+    font-size: 14px;
+}
+
+.fee-page .fee-table td {
+    background: #fff;
+}
+
+.fee-page .fee-table th:not(:first-child),
+.fee-page .fee-table td:not(:first-child) {
+    text-align: right;
+}
+
+.fee-page .fee-table td:not(:first-child) {
+    white-space: nowrap;
+}
+
+.fee-page .fee-table tr:nth-child(odd) td {
+    background: #f3f7f9;
+}
+
+.fee-page .fee-table tr:last-child td {
+    border-bottom: 0;
+}
+
+/* 4列の表は屯数を固定し、横スクロール中も料金と対応させる。 */
+.fee-page .table-wrap--wide .fee-table {
+    min-width: 560px;
+    table-layout: fixed;
+}
+
+.fee-page .table-wrap--wide tr > :first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    width: 28%;
+    box-shadow: 1px 0 #dce5eb;
+}
+
+.fee-page .container .table-hint {
+    display: none;
+    margin: 0 0 16px;
+    color: #526575;
+    font-size: 13px;
+}
+
+/* プレジャーボート料金：既存の4項目を比較カードへ */
+.fee-page .pb-plan {
+    padding: 28px;
+    border: 1px solid #e0e8ee;
+    border-top: 3px solid #1b5a7a;
+    border-radius: 12px;
+    background: #f8fafb;
+}
+
+.fee-page .pb-plan h3 {
+    margin: 0 0 20px;
+    font-size: 22px;
+}
+
+.fee-page .plan-details {
+    margin: 0;
+}
+
+.fee-page .plan-details > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+    border-top: 1px solid #dce5eb;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.fee-page .plan-details dt {
+    flex: none;
+    color: #526575;
+}
+
+.fee-page .plan-details dd {
+    margin: 0;
+    text-align: right;
+}
+
+.fee-page .plan-details .plan-price {
+    display: block;
+    padding: 0 0 18px;
+    border: 0;
+}
+
+.fee-page .plan-price dt {
+    font-size: 13px;
+}
+
+.fee-page .plan-price dd {
+    color: #103f5e;
+    font-size: clamp(30px, 3vw, 38px);
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    font-variant-numeric: tabular-nums;
+}
+
+.fee-page .plan-term dd {
+    color: #103f5e;
+    font-weight: 700;
+}
+
+.fee-page .note-box,
+.fee-page .note {
+    margin: 24px 0 32px;
+    padding: 22px 24px;
+    border-left: 3px solid #39718b;
+    border-radius: 8px;
+    background: #f3f7f9;
+}
+
+.fee-page .note-box h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+.fee-page .note-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.fee-page .note-box li + li {
+    margin-top: 6px;
+}
+
+.fee-page .note {
+    margin-bottom: 0;
+    border-color: #bd8a36;
+    background: #fff9ed;
+}
+
+.fee-page .note p {
+    margin: 8px 0;
+}
+
+/* アクセス：所在地と地図を並べる */
+.access-page .access-grid {
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.25fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.access-page .access-info {
+    padding: 28px;
+    border: 1px solid #e0e8ee;
+    border-top: 3px solid #1b5a7a;
+    border-radius: 12px;
+    background: #f8fafb;
+}
+
+.access-page .access-info .section-title {
+    margin-top: 28px;
+}
+
+.access-page .access-info .section-title:first-child {
+    margin-top: 0;
+}
+
+.access-page .access-info h2 {
+    margin-bottom: 14px;
+    font-size: 22px;
+}
+
+.access-page .access-visual {
+    display: grid;
+    gap: 20px;
+    min-width: 0;
+}
+
+.access-page .access-photo {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #dce5eb;
+    border-radius: 12px;
+    background: #f8fafb;
+}
+
+.access-page .access-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.access-page .access-photo figcaption {
+    padding: 12px 18px;
+    color: #526575;
+    font-size: 13px;
+}
+
+.access-page .access-routes {
+    display: grid;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.access-page .access-route {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 12px;
+    border: 1px solid #dce5eb;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 14px;
+}
+
+.access-page .route-arrow {
+    color: #39718b;
+}
+
+.access-page .access-route strong {
+    color: #103f5e;
+    text-align: right;
+}
+
+.access-page .access-map {
+    min-width: 0;
+    height: 360px;
+    overflow: hidden;
+    border: 1px solid #dce5eb;
+    border-radius: 12px;
+    background: #edf3f6;
+}
+
+.access-page .access-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* お問い合わせ：連絡先3項目と、開閉できる相談例 */
+.contact-page .contact-methods {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.contact-page .contact-method {
+    padding: 24px;
+    border: 1px solid #e0e8ee;
+    border-radius: 12px;
+    background: #f8fafb;
+}
+
+.contact-page .contact-icon {
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin-bottom: 18px;
+    color: #39718b;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.contact-page .contact-method h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+}
+
+.contact-page .contact-main strong {
+    color: #173953;
+}
+
+.contact-page .tel-link,
+.contact-page .mail-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    max-width: 100%;
+    color: #064b7b;
+    font-weight: 700;
+    line-height: 1.7;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-page .tel-link {
+    font-size: clamp(20px, 1.8vw, 26px);
+}
+
+.contact-page .mail-link {
+    font-size: clamp(14px, 1.15vw, 17px);
+}
+
+.contact-page .tel-link:hover,
+.contact-page .mail-link:hover {
+    text-decoration: underline;
+}
+
+.contact-page .container .contact-hours {
+    margin: 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #103f5e;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.contact-page .contact-notes {
+    margin-top: 24px;
+}
+
+.contact-page .contact-notes p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.contact-page .contact-consultation {
+    margin-top: 48px;
+}
+
+.contact-page .consultation-details {
+    margin: 24px 0;
+    border: 1px solid #dce5eb;
+    border-radius: 10px;
+    background: #f8fafb;
+}
+
+.contact-page .consultation-details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    min-height: 52px;
+    padding: 16px 20px;
+    color: #173953;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+}
+
+.contact-page .consultation-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.contact-page .consultation-details summary::after {
+    content: '+';
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+.contact-page .consultation-details[open] summary::after {
+    content: '−';
+}
+
+.contact-page .consultation-details ul {
+    margin: 0;
+    padding: 0 24px 20px 40px;
+}
+
+.contact-page .consultation-details li + li {
+    margin-top: 8px;
+}
+
+.contact-page .info-box {
+    margin: 24px 0;
+    padding: 20px;
+    border-left: 3px solid #39718b;
+    border-radius: 8px;
+    background: #f3f7f9;
+}
+
+.contact-page .info-box h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.contact-page .info-box p {
+    margin: 0;
+}
+
+.contact-page .contact-button {
+    margin: 8px 12px 0 0;
+}
+
+@media (max-width: 900px) {
+    .info-page .hero {
+        min-height: 400px;
+        padding-top: 240px;
+    }
+
+    .fee-page .fee-card {
+        scroll-margin-top: 224px;
+    }
+
+    .access-page .access-grid,
+    .contact-page .contact-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .access-page .access-map {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .fee-page .pb-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .fee-page .container .table-hint {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .info-page .hero {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .info-page .container {
+        width: calc(100% - 28px);
+        margin: 36px auto 50px;
+    }
+
+    .fee-page .fee-card {
+        margin-bottom: 44px;
+    }
+
+    .fee-page .period-box {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .fee-page .period-item {
+        padding: 14px 12px;
+    }
+
+    .fee-page .note-box,
+    .fee-page .note,
+    .access-page .access-info,
+    .fee-page .pb-plan,
+    .contact-page .contact-method {
+        padding: 22px 20px;
+    }
+
+    .contact-page .info-box {
+        padding: 18px;
+    }
+
+    .info-page .map-button,
+    .info-page .contact-button {
+        display: flex;
+        width: 100%;
+        margin: 12px 0 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:has(.fee-page) {
+        scroll-behavior: auto;
+    }
+
+    .info-page .map-button,
+    .info-page .contact-button {
+        transition: none;
+    }
+}
